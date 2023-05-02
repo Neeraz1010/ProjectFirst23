@@ -145,3 +145,38 @@ ul li a:hover {
   color: #019BA9;
   filter: hue-rotate(180deg);
 }
+
+
+/* ********************************** scheduleAppointment.html **************************************** */
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-200px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+.scheduleAppointmentMain {
+  animation-name: slideFromLeft;
+  animation-duration: 2s;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  body {
+    background-color: black;
+  }
+
+  .scheduleAppointmentHead {
+    font-size: 200px;
+  }
+
+}
+
+
+/* ****************************************************************************************************** */
