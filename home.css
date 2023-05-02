@@ -179,4 +179,9 @@ ul li a:hover {
 }
 
 
+.returningPatient, .newPatient  button{
+  border: none;
+  text-decoration: none;
+}
+
 /* ****************************************************************************************************** */

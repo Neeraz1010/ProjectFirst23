@@ -29,7 +29,8 @@
                                         <div style="font-size: 1.5vw; margin-left: 7vw; display: flex;"><strong>Welcome
                                                             to Medixo
                                                             Centers!</strong></div><br>
-                                        <div style="color:#938D8D; font-size: 1vw; margin-left: 7vw; display: flex;">Is this a request
+                                        <div style="color:#938D8D; font-size: 1vw; margin-left: 7vw; display: flex;">Is
+                                                  this a request
                                                   for a new or a
                                                   returning
                                                   patient?</div><br><br>
@@ -37,16 +38,16 @@
                     </div>
                     <div class="patientLogin" style="display: flex;">
                               <div style="margin: auto;">
-                                        <a href="#" style="text-decoration: none;" class="newPatient">
+                                        <button class="returningPatient" onclick="newPatient();">
                                                   <img src="newPatient.png" alt="newPatient image"
                                                             style="height: 5.5vw; width: auto;">
-                                        </a>
+                                        </button>
                                         &nbsp;&nbsp;&nbsp;&nbsp;
-                                        <a href="#" style="text-decoration: none; width: 0px;">
+                                        <button class="returningPatient" onclick="returningPatient();">
                                                   <img src="returningPatient.png" alt="returningPatient image"
                                                             style="height: 5.5vw; width: auto;">
-                                                  <br> <br>
-                                        </a>
+                                        </button>
+                                        <br> <br>
                               </div>
 
                     </div>
@@ -70,6 +71,19 @@
                               4.Your provider will call you to complete your visit.
                     </div>
           </div>
+          <script>
+                    // function returningPatient() {
+                    //           alert("You are returning Patient");
+                    // }
+
+                    // document.querySelectorAll('button').addEventListener('click', function returningPatient(){
+                    //           alert("You are returning Patient");
+                    // });
+                    
+                    // function newPatient() {
+                    //           alert("You are New Patient");
+                    // }
+          </script>
 </body>
 
 </html>
