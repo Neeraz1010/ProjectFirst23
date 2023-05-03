@@ -38,12 +38,12 @@
                     </div>
                     <div class="patientLogin" style="display: flex;">
                               <div style="margin: auto; border: none; text-decoration: none;">
-                                        <button class="newPatient" onclick="newPatient();" style="border: none; text-decoration: none;">
+                                        <button id="newPatient" style="border: none; text-decoration: none;">
                                                   <img src="newPatient.png" alt="newPatient image"
                                                             style="height: 5.5vw; width: auto;">
                                         </button>
                                         &nbsp;&nbsp;&nbsp;&nbsp;
-                                        <button class="returningPatient" style="border: none; text-decoration: none;">
+                                        <button id="returningPatient" style="border: none; text-decoration: none;">
                                                   <img src="returningPatient.png" alt="returningPatient image"
                                                             style="height: 5.5vw; width: auto;">
                                         </button>
@@ -72,19 +72,17 @@
                     </div>
           </div>
           <script>
-                    // function returningPatient() {
-                    //           alert("You are returning Patient");
-                    // }
+                    document.getElementById('returningPatient').onclick = returningPatient;
+                    document.getElementById('newPatient').onclick = newPatient;
 
-          //           document.getElementsByClassName('returningPatient').onclick = returningPatient1;
-          //           function returningPatient1() {
-          //                     alert("You are returning Patient");
-          //           };
+                    function returningPatient() {
+                              alert("You are returning Patient");
+                    };
 
-          //           function newPatient() {
-          //                     alert("You are New Patient");
-          //           }
-          // </script>
+                    function newPatient() {
+                              alert("You are New Patient");
+                    };
+          //</script>
 </body>
 
 </html>
