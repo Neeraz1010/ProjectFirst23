@@ -8,3 +8,6 @@ CREATE TABLE userLogin (
 		phoneNumber VARCHAR(255) NOT NULL,
         PRIMARY KEY(id)
 );
+
+INSERT INTO userLogin (userId, fullName, phoneNumber) 
+VALUES ("2059", "Niraj Giri", "9847950672");
