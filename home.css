@@ -180,4 +180,38 @@ ul li a:hover {
 
 
 
+/* *************************** */
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 255px;
+  left: 370px;
+  border: 3px solid #f1f1f1;
+  opacity: 100%;
+}
+
+.open-button {
+  /* background-color: #555; */
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  /* opacity: 100%; */
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+#returningPatientLoginForm {
+  margin: auto;
+  background-color: #fff;
+  height: 50%;
+  width: 50%;
+}
+
+.form-container input {
+  width: 100%;
+}
+
 /* ****************************************************************************************************** */

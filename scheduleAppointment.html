@@ -43,7 +43,8 @@
                                                             style="height: 5.5vw; width: auto;">
                                         </button>
                                         &nbsp;&nbsp;&nbsp;&nbsp;
-                                        <button id="returningPatient" style="border: none; text-decoration: none;">
+                                        <button id="returningPatient" style="border: none; text-decoration: none;"
+                                                  onclick="openForm();">
                                                   <img src="returningPatient.png" alt="returningPatient image"
                                                             style="height: 5.5vw; width: auto;">
                                         </button>
@@ -71,17 +72,30 @@
                               4.Your provider will call you to complete your visit.
                     </div>
           </div>
+          <div class="form-popup" id="returningPatientLoginForm">
+                    <form action="/action_page.php" class="form-container">
+                              <h1>Login</h1>
+
+                              <label for="email"><b>Email</b></label>
+                              <input type="text" placeholder="Enter Email" name="email" required> <br>
+
+                              <label for="psw"><b>Password</b></label>
+                              <input type="password" placeholder="Enter Password" name="psw" required> <br>
+
+                              <button type="submit" class="btn">Login</button>
+                              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+          </div>
           <script>
                     document.getElementById('returningPatient').onclick = returningPatient;
-                    document.getElementById('newPatient').onclick = newPatient;
 
                     function returningPatient() {
-                              alert("You are returning Patient");
+                              document.getElementById("returningPatientLoginForm").style.display = "block";
                     };
 
-                    function newPatient() {
-                              alert("You are New Patient");
-                    };
+                    function closeForm() {
+                              document.getElementById("returningPatientLoginForm").style.display = "none";
+                    }
           //</script>
 </body>
 
