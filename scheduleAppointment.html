@@ -5,7 +5,7 @@
           <meta charset="UTF-8">
           <meta http-equiv="X-UA-Compatible" content="IE=edge">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <link rel="stylesheet" href="home.css">
+          <link rel="stylesheet" href="css/home.css">
           <title>Schedule An Appointment</title>
 </head>
 
@@ -15,7 +15,7 @@
                     <div class="scheduleAppointment">
                               <div style="display: flex;">
                                         <div style="display: flex;">
-                                                  <img src="medixoLogoSmall.png" alt="Medixo Logo"
+                                                  <img src="pictures/medixoLogoSmall.png" alt="Medixo Logo"
                                                             style="height: 10vw; width: auto; float: left; margin-left: 3vw; ">
                                                   <div style="color: #294753; font-size: 3vw; margin: 3.4vw 4vw;"
                                                             class="scheduleAppointmentHead">
@@ -39,13 +39,13 @@
                     <div class="patientLogin" style="display: flex;">
                               <div style="margin: auto; border: none; text-decoration: none;">
                                         <button id="newPatient" style="border: none; text-decoration: none;">
-                                                  <img src="newPatient.png" alt="newPatient image"
+                                                  <img src="pictures/newPatient.png" alt="newPatient image"
                                                             style="height: 5.5vw; width: auto;">
                                         </button>
                                         &nbsp;&nbsp;&nbsp;&nbsp;
                                         <button id="returningPatient" style="border: none; text-decoration: none;"
                                                   onclick="openForm();">
-                                                  <img src="returningPatient.png" alt="returningPatient image"
+                                                  <img src="pictures/returningPatient.png" alt="returningPatient image"
                                                             style="height: 5.5vw; width: auto;">
                                         </button>
                                         <br> <br>
@@ -83,20 +83,48 @@
                               <input type="password" placeholder="Enter Password" name="psw" required> <br>
 
                               <button type="submit" class="btn">Login</button>
-                              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                              <button type="button" class="btn cancel" onclick="returningPatientClose();">Close</button>
                     </form>
           </div>
+
+          <div class="form-popup" id="newPatientCreateForm">
+                    <form action="/action_page.php" class="form-container">
+                              <h1>Create</h1>
+
+                              User Id :
+                              <input type="text" name="userId" id="" placeholder="User Id given by Hospital"><br>
+
+                              Full Name :
+                              <input type="text" name="fullName" id="" placeholder="Full Name"> <br>
+
+                              Phone Number :
+                              <input type="tel" name="phoneNumber" id="" placeholder="Phone Number">
+
+                              <button type="submit" class="btn">Create</button>
+                              <button type="button" class="btn cancel" onclick="newPatientClose();">Close</button>
+                    </form>
+          </div>
+
           <script>
                     document.getElementById('returningPatient').onclick = returningPatient;
+                    document.getElementById('newPatient').onclick = newPatient;
 
                     function returningPatient() {
                               document.getElementById("returningPatientLoginForm").style.display = "block";
                     };
 
-                    function closeForm() {
+                    function returningPatientClose() {
                               document.getElementById("returningPatientLoginForm").style.display = "none";
                     }
-          //</script>
+
+                    function newPatient() {
+                              document.getElementById("newPatientCreateForm").style.display = "block";
+                    };
+
+                    function newPatientClose() {
+                              document.getElementById("newPatientCreateForm").style.display = "none";
+                    };
+          </script>
 </body>
 
 </html>

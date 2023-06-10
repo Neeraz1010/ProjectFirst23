@@ -1,6 +1,5 @@
 CREATE DATABASE medixoHospital;
 USE medixoHospital;
-
 CREATE TABLE userLogin (
 		id INT NOT NULL AUTO_INCREMENT,
         userId VARCHAR(255) NOT NULL,
@@ -11,3 +10,5 @@ CREATE TABLE userLogin (
 
 INSERT INTO userLogin (userId, fullName, phoneNumber) 
 VALUES ("2059", "Niraj Giri", "9847950672");
+
+SELECT * FROM userLogin;
