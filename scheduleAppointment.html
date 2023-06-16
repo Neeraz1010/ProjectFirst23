@@ -73,17 +73,24 @@
                     </div>
           </div>
           <div class="form-popup" id="returningPatientLoginForm">
-                    <form action="/action_page.php" class="form-container">
+                    <form action="php/checkUser.php" class="form-container" method="POST">
                               <h1>Login</h1>
+                              <form method="POST" action="php/checkUser.php">
 
-                              <label for="email"><b>Email</b></label>
-                              <input type="text" placeholder="Enter Email" name="email" required> <br>
+                                        <label>User ID:</label>
+                                        <input type="text" name="userId" placeholder="Given By Hospital" required>
 
-                              <label for="psw"><b>Password</b></label>
-                              <input type="password" placeholder="Enter Password" name="psw" required> <br>
+                                        <label>Full Name:</label>
+                                        <input type="text" name="fullName" placeholder="Full Name" required>
 
-                              <button type="submit" class="btn">Login</button>
-                              <button type="button" class="btn cancel" onclick="returningPatientClose();">Close</button>
+                                        <label>Phone Number:</label>
+                                        <input type="text" name="phoneNumber" placeholder="Phone Number" required><br>
+                                        <br>
+
+                                        <button type="submit" class="btn">Login</button>
+                                        <button type="button" class="btn cancel"
+                                                  onclick="returningPatientClose();">Close</button>
+                              </form>
                     </form>
           </div>
 

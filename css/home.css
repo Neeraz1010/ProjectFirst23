@@ -222,3 +222,83 @@ ul li a:hover {
 }
 
 /* ****************************************************************************************************** */
+.downoverlay
+{
+  padding-bottom: 150px;
+}
+
+.downoverlayimg
+{
+  margin-left: 79px;
+  margin-top: -30px;
+  height: 349px;
+}
+
+
+
+
+.facebookicon
+{
+  height: 40px;
+  margin-left: 168px;
+  margin-top: 51px;
+}
+.twittericon
+{
+  height: 36px;
+  margin-left: 7px;
+  margin-top: 18px;
+}
+.youtubeicon
+{
+  height: 34px;
+  margin-left: 7px;
+  margin-top: 18px;
+}
+.instagramicon
+{
+  height: 34px;
+  margin-left: 7px;
+  margin-top: 18px;
+}
+.quicklinks
+{
+  list-style-type: none;
+  margin-left: 787px;
+  margin-top: -321px;
+  text-decoration: none;
+  line-height: 32px;
+  font-size: 20px;
+  
+}
+.quicklinks u
+{
+  color: #019BA9;
+  text-underline-offset: 8px;
+}
+
+.quicklinks li a
+{
+  text-decoration: none;
+  color: #019BA9;
+}
+.downoverlayservices
+{
+  margin-left: 1087px;
+  margin-top: -321px;
+  list-style-type: none;
+  line-height: 32px;
+  list-style-type: none;
+  font-size: 20px;
+} 
+.downoverlayservices u
+{
+  color: #019BA9;
+  text-underline-offset: 8px;
+}
+
+.downoverlayservices li a
+{
+  text-decoration: none;
+  color: #019BA9;
+}

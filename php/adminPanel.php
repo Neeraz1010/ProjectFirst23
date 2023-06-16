@@ -24,11 +24,23 @@
     form {
       margin-bottom: 16px;
     }
-    .delete-btn {
-      background-color: #f44336;
+    input[type=text] {
+      padding: 8px;
+      width: 250px;
     }
-    .update-btn {
-      background-color: #ff9800;
+    input[type=submit] {
+      padding: 8px 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    .addForm button:hover {
+      color: #019BA9;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -38,16 +50,16 @@
   <form method="post" action="addData.php" class="inputForm">
 
     <h1>Add</h1>
-    <div>
+    <div class="addForm">
       User Id :
-      <input type="text" name="userId" id="" placeholder="User Id given by Hospital">
+      <input type="text" name="userId"  placeholder="User Id given by Hospital" required>
       
       Full Name :
-      <input type="text" name="fullName" id="" placeholder="Full Name">
+      <input type="text" name="fullName"  placeholder="Full Name" required>
       
       Phone Number :
-      <input type="tel" name="phoneNumber" id="" placeholder="Phone Number">
-      <button type="submit">Add</button>
+      <input type="text" name="phoneNumber"  placeholder="Phone Number" required>
+      <button type="submit" style="width: 75px; height: 34px; ">Add</button>
       
     </div>
   </form><br><br><br>

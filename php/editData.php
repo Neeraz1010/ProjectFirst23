@@ -35,16 +35,16 @@
 <h2>Update User</h2>
     <form method="POST" action="adminPanel.php">
          <label>ID:</label>
-        <input type="text" name="id">
+        <input type="text" name="id" required>
     
         <label>User ID:</label>
-        <input type="text" name="userId">
+        <input type="text" name="userId" required>
 
         <label>Full Name:</label>
-        <input type="text" name="fullName">
+        <input type="text" name="fullName" required>
 
         <label>Phone Number:</label>
-        <input type="text" name="phoneNumber"><br> <br>
+        <input type="text" name="phoneNumber" required><br> <br>
 
         <input type="submit" value="Update" style="float: right; margin-right: 70px;">
     </form>
