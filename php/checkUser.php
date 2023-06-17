@@ -1,22 +1,40 @@
 <?php
 include 'connectToDatabase.php';
-// Assuming you have already established a database connection
 
-// Fetching user data based on userId
-$userId = $_POST['userId']; // Assuming the userId is submitted via a form
+// Get the user ID from the form input
+$userId = $_POST['userId'];
+
+// Prepare the SQL query to check if the user ID exists in the userLogin table
 $query = "SELECT * FROM userLogin WHERE userId = '$userId'";
 $result = mysqli_query($connection, $query);
 
-if (mysqli_num_rows($result) > 0) {
-          $row = mysqli_fetch_assoc($result);
-          $fullName = $row['fullName'];
-          $phoneNumber = $row['phoneNumber'];
+if ($result) {
+          // User ID exists in the userLogin table
+          if ($row = mysqli_fetch_assoc($result)) {
+                    $roleId = $row['role'];
 
-          // Redirecting to home.html
-          header("Location: ../home.html");
-          exit();
-} else {
-          // User not found, display error message
-          echo "User not found.";
+                    // Prepare the SQL query to retrieve the role name based on the role ID
+                    $roleQuery = "SELECT * FROM role WHERE roleId = '$roleId'";
+                    $roleResult = mysqli_query($connection, $roleQuery);
+
+                    if ($roleResult) {
+                              if ($roleRow = mysqli_fetch_assoc($roleResult)) {
+                                        $roleName = $roleRow['roleName'];
+
+                                        // Redirect the user based on the role
+                                        if ($roleName == 'user') {
+                                                  header("Location: ../home.html");
+                                                  exit;
+                                        } elseif ($roleName == 'admin') {
+                                                  header("Location: ../php/adminPanel.php");
+                                                  exit;
+                                        }
+                              }
+                    }
+          }
 }
+
+// If the user ID doesn't exist or an error occurred, redirect to an error page or display an error message
+header("Location: error.html");
+exit;
 ?>
