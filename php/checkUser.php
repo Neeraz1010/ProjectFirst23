@@ -30,11 +30,16 @@ if ($result) {
                                                   exit;
                                         }
                               }
+                              else {
+                                        // User ID does not exist
+                                        header("Location: ../errorUserCheck.html");
+                                        exit;
+                                    }
                     }
           }
 }
 
 // If the user ID doesn't exist or an error occurred, redirect to an error page or display an error message
-header("Location: error.html");
+header("Location: ../errorUserCheck.html");
 exit;
 ?>
