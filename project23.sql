@@ -1,14 +1,32 @@
 CREATE DATABASE medixoHospital;
 USE medixoHospital;
-CREATE TABLE userLogin (
-		id INT NOT NULL AUTO_INCREMENT,
-        userId VARCHAR(255) NOT NULL,
-		fullName VARCHAR(255) NOT NULL,
-		phoneNumber VARCHAR(255) NOT NULL,
-        PRIMARY KEY(id)
+
+-- Create table 'role' to store roles
+CREATE TABLE role (
+  roleId INT PRIMARY KEY,
+  roleName VARCHAR(20)
 );
 
-INSERT INTO userLogin (userId, fullName, phoneNumber) 
-VALUES ("2059", "Niraj Giri", "9847950672");
+-- Insert sample roles
+INSERT INTO role (roleId, roleName) VALUES
+(1, 'user'),
+(2, 'admin');
+
+-- Create table 'userLogin' to store user login details
+CREATE TABLE userLogin (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  userId VARCHAR(20),
+  fullName VARCHAR(50),
+  phoneNumber VARCHAR(20),
+  role INT,
+  FOREIGN KEY (role) REFERENCES role (roleId)
+);
+
+-- Insert sample user data
+INSERT INTO userLogin (userId, fullName, phoneNumber, role) VALUES
+('210623', 'Anjan Baniya', '9882638310', 1);
+
+DELETE FROM userLogin where id = 3;
 
 SELECT * FROM userLogin;
+

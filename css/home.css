@@ -166,37 +166,21 @@ ul li a:hover {
 }
 
 
-@media screen and (max-width: 600px) {
-
-  body {
-    background-color: black;
-  }
-
-  .scheduleAppointmentHead {
-    font-size: 200px;
-  }
-
-}
-
-
-
 /* *************************** */
 .form-popup {
   display: none;
   position: fixed;
-  top: 255px;
-  left: 370px;
-  border: 3px solid #f1f1f1;
+  top: 25%;
+  left: 25%;
+  border: 1px solid orange;
   opacity: 100%;
 }
 
 .open-button {
-  /* background-color: #555; */
   color: white;
   padding: 16px 20px;
   border: none;
   cursor: pointer;
-  /* opacity: 100%; */
   position: fixed;
   bottom: 23px;
   right: 28px;
@@ -206,8 +190,9 @@ ul li a:hover {
 #returningPatientLoginForm {
   margin: auto;
   background-color: #fff;
-  height: 50%;
+  height: 65%;
   width: 50%;
+  border-radius: 10px;
 }
 
 #newPatientCreateForm {
@@ -215,20 +200,24 @@ ul li a:hover {
   background-color: #fff;
   height: 50%;
   width: 50%;
+  border-radius: 10px;
 }
 
 .form-container input {
   width: 100%;
 }
 
+.btn:hover {
+  color: #019BA9;
+  filter: hue-rotate(180deg);
+}
+
 /* ****************************************************************************************************** */
-.downoverlay
-{
+.downoverlay {
   padding-bottom: 150px;
 }
 
-.downoverlayimg
-{
+.downoverlayimg {
   margin-left: 79px;
   margin-top: -30px;
   height: 349px;
@@ -237,68 +226,65 @@ ul li a:hover {
 
 
 
-.facebookicon
-{
+.facebookicon {
   height: 40px;
   margin-left: 168px;
   margin-top: 51px;
 }
-.twittericon
-{
+
+.twittericon {
   height: 36px;
   margin-left: 7px;
   margin-top: 18px;
 }
-.youtubeicon
-{
+
+.youtubeicon {
   height: 34px;
   margin-left: 7px;
   margin-top: 18px;
 }
-.instagramicon
-{
+
+.instagramicon {
   height: 34px;
   margin-left: 7px;
   margin-top: 18px;
 }
-.quicklinks
-{
+
+.quicklinks {
   list-style-type: none;
   margin-left: 787px;
   margin-top: -321px;
   text-decoration: none;
   line-height: 32px;
   font-size: 20px;
-  
+
 }
-.quicklinks u
-{
+
+.quicklinks u {
   color: #019BA9;
   text-underline-offset: 8px;
 }
 
-.quicklinks li a
-{
+.quicklinks li a {
   text-decoration: none;
   color: #019BA9;
 }
-.downoverlayservices
-{
+
+.downoverlayservices {
   margin-left: 1087px;
   margin-top: -321px;
   list-style-type: none;
   line-height: 32px;
   list-style-type: none;
   font-size: 20px;
-} 
-.downoverlayservices u
-{
+}
+
+.downoverlayservices u {
   color: #019BA9;
   text-underline-offset: 8px;
 }
 
-.downoverlayservices li a
-{
+.downoverlayservices li a {
   text-decoration: none;
   color: #019BA9;
 }
