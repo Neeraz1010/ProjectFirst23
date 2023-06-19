@@ -26,7 +26,6 @@ CREATE TABLE userLogin (
 INSERT INTO userLogin (userId, fullName, phoneNumber, role) VALUES
 ('210623', 'Anjan Baniya', '9882638310', 1);
 
-DELETE FROM userLogin where id = 3;
 
 SELECT * FROM userLogin;
 
