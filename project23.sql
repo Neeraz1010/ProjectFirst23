@@ -24,7 +24,8 @@ CREATE TABLE userLogin (
 
 -- Insert sample user data
 INSERT INTO userLogin (userId, fullName, phoneNumber, role) VALUES
-('210623', 'Anjan Baniya', '9882638310', 1);
+('210634', 'Niraj Giri', '9847950672', 2),
+('210633', 'Anjan Phuyal', '9841361927', 2);
 
 
 SELECT * FROM userLogin;
