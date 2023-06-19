@@ -18,7 +18,7 @@ $insertQuery = "INSERT INTO userLogin (userId, fullName, phoneNumber) VALUES ('$
 if (!mysqli_query($connection, $insertQuery)) {
     echo "Error: " . mysqli_error($connection);
 } else {
-    header('location: adminPanel.php');
+    header('location: ../userCreated.html');
 }
 
 // Close the database connection
