@@ -231,9 +231,6 @@ ul li a:hover {
   height: 349px;
 }
 
-
-
-
 .facebookicon {
   height: 40px;
   margin-left: 168px;
@@ -281,6 +278,34 @@ ul li a:hover {
 .instagramicon:hover {
   transform: scale(1.5);
 }
+/* 
+.firstParagraphAboutUs,
+.secondParagraphAboutUs,
+.thirdParagraphAboutUs,
+.fourthParagraphAboutUs {
+  transition: tranform 0.3s ease;
+}
+
+.firstParagraphAboutUs:hover,
+.secondParagraphAboutUs:hover,
+.thirdParagraphAboutUs:hover,
+.fourthParagraphAboutUs:hover {
+  transform: scale(1.5);
+}
+
+.aboutUs p {
+  text-align: justify;
+}
+
+.aboutUs {
+  position: relative;
+}
+
+.aboutUs:hover p:not(:hover) {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  filter: blur(5px);
+} */
 
 .quicklinks u {
   color: #019BA9;
